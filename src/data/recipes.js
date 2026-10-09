@@ -1,0 +1,65 @@
+export const RECIPES = [
+  {
+    id: '1',
+    title: 'Mango Sticky Rice',
+    time: '30 min',
+    calories: '320 cal',
+    image: 'https://images.unsplash.com/photo-1621379766946-0b1a030c6a51?w=500&q=80',
+    ingredients: [
+      { name: 'Sticky Rice', amount: '1 cup', metric: '200g' },
+      { name: 'Coconut Milk', amount: '1 can', metric: '400ml' },
+      { name: 'Sugar', amount: '3 tbsp', metric: '45g' },
+      { name: 'Salt', amount: '0.5 tsp', metric: '2g' },
+      { name: 'Mango', amount: '2', metric: '2' },
+    ],
+    steps: [
+      'Rinse the rice and soak for 30 minutes.',
+      'Steam the rice until tender.',
+      'Heat coconut milk, sugar, and salt in a saucepan.',
+      'Mix half the coconut sauce into the cooked rice.',
+      'Serve rice with fresh mango slices and remaining sauce.',
+    ],
+  },
+  {
+    id: '2',
+    title: 'Pizza Margherita',
+    time: '25 min',
+    calories: '450 cal',
+    image: 'https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?w=500&q=80',
+    ingredients: [
+      { name: 'Pizza Dough', amount: '1', metric: '1' },
+      { name: 'Tomato Sauce', amount: '0.5 cup', metric: '120ml' },
+      { name: 'Fresh Mozzarella', amount: '4 oz', metric: '115g' },
+      { name: 'Fresh Basil', amount: '5 leaves', metric: '5 leaves' },
+      { name: 'Olive Oil', amount: '1 tbsp', metric: '15ml' },
+    ],
+    steps: [
+      'Preheat oven to 475°F (245°C).',
+      'Stretch out the pizza dough.',
+      'Spread tomato sauce over the dough.',
+      'Tear mozzarella and place on top.',
+      'Bake for 10-12 minutes. Top with fresh basil and olive oil.',
+    ],
+  },
+  {
+    id: '3',
+    title: 'Vegan Mac and Cheese',
+    time: '20 min',
+    calories: '420 cal',
+    image: 'https://images.unsplash.com/photo-1543339308-43e59d6b73a6?w=500&q=80',
+    ingredients: [
+      { name: 'Macaroni', amount: '2 cups', metric: '200g' },
+      { name: 'Raw Cashews', amount: '1 cup', metric: '140g' },
+      { name: 'Nutritional Yeast', amount: '0.25 cup', metric: '15g' },
+      { name: 'Garlic Powder', amount: '1 tsp', metric: '3g' },
+      { name: 'Almond Milk', amount: '1 cup', metric: '240ml' },
+    ],
+    steps: [
+      'Boil macaroni according to package instructions.',
+      'Blend cashews, nutritional yeast, garlic powder, and almond milk until smooth.',
+      'Heat the sauce in a pan until thickened.',
+      'Mix the cooked macaroni with the vegan cheese sauce.',
+      'Serve hot.',
+    ],
+  }
+];
