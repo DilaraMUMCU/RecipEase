@@ -1,13 +1,22 @@
 {
   "expo": {
-    "name": "temp_app",
-    "slug": "temp_app",
+    "name": "RecipEase",
+    "slug": "recipease",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "RecipEase needs access to your camera to take photos of pantry ingredients.",
+        "NSPhotoLibraryUsageDescription": "RecipEase needs access to your photos to upload pantry ingredients."
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -15,10 +24,25 @@
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "RecipEase needs access to your photos to upload pantry ingredients.",
+          "cameraPermission": "RecipEase needs access to your camera to take photos of pantry ingredients."
+        }
+      ],
+      "expo-status-bar"
+    ]
   }
 }
